@@ -101,6 +101,7 @@ header img {
 	min-height: 100vh;
 	width: 100%;
 	position: relative;
+	
 }
 
 
@@ -113,6 +114,7 @@ header img {
      grid-column-gap: 0px;
      width: 100%;
      position: absolute;
+     
 }
 .viewer img {
 
@@ -120,6 +122,7 @@ header img {
 	height: 300px;
 	transition: 0.45s;
 	cursor: pointer;
+	
 }
 
 .viewer img:hover {
@@ -127,5 +130,37 @@ header img {
 
 }
 
+
+/*********************************************************************************************************************************************************************************/
+                                                                          /*FOOTER*/
+/*********************************************************************************************************************************************************************************/
+
+
+footer {
+	height: 280px;
+	width: 100%;
+	background: black;
+	position: relative;
+	color: white;
+
+}    
+
+h2, p {
+	visibility: hidden;
+}
+
+ul{
+	display: flex;
+	justify-content: space-around;
+	width: 470px;
+	letter-spacing: 1px;
+	margin: 100px, 125px, 40px, 850px;
     
-    
+
+}
+
+.footermenu, footer p, footer h2 {
+
+	margin: 55px, 100px, 95px, 100px;
+	position: absolute;
+}
