@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito+Sans:wght@400;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	/*border: 1px solid hotpink;*/
+}
+
+
+h1 {
+	font-family: Montserrat, sans-serif;
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+html, body {
+	font-family: Nunito Sans, sans-serif;
+	height: 0;
+	position: relative;
+}
+
+/*********************************************************************************************************************************************************************************/
+                                                                          /*header*/
+/*********************************************************************************************************************************************************************************/
+
+
+header {
+	height: 70px;
+	margin: 35px 75px 0px 75px ;
+	position: relative;
+	width: auto;
+
+
+}
+
+header img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	left: 0;
+	position: absolute;
+}
+
+
+.menu ul {
+	font-family: Montserrat, sans-serif;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	width: 200px;
+	right: 0;
+}
+
+.menu li {
+	color: #191919FF;
+	transition: 0.4s;
+	cursor: pointer;
+	font-weight: bold;
+
+
+}
+
+.menu li:hover {
+	color: #11C8C3FF;
+
+}
+
+/*********************************************************************************************************************************************************************************/
+                                                                          /*SECTION 1*/
+/*********************************************************************************************************************************************************************************/
+
+.section-1 {
+	height: 300px;
+	width: auto;
+	position: relative;
+	background: #F6F6F6FF;
+
+}
+
+.container {
+	height: 100px;
+	margin: 65px 400px 70px 400px;
+	position: absolute;
+	text-align: center;
+	
+}
+
+.container p {
+	color: #838383FF;
+}
+
+/*********************************************************************************************************************************************************************************/
+                                                                          /*SECTION 2*/
+/*********************************************************************************************************************************************************************************/
+
+.section-2 {
+	min-height: 100vh;
+	width: 100%;
+	position: relative;
+}
+
+
+
+.viewer {
+	 display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     grid-template-rows: repeat(3, 1fr);
+     grid-row-gap: 0px;
+     grid-column-gap: 0px;
+     width: 100%;
+     position: absolute;
+}
+.viewer img {
+
+	width: 100%;
+	height: 300px;
+	transition: 0.2s;
+	cursor: pointer;
+}
+
+.viewer img:hover {
+    border: 5px solid rgba(18, 202, 196, 0.48);
+
+
+/*********************************************************************************************************************************************************************************/
+                                                                          /*FOOTER*/
+/*********************************************************************************************************************************************************************************/
+
