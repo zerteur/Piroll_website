@@ -42,7 +42,7 @@ header {
 }
 
 .logo {
-	background: url(./img/logo.png);
+	background: url(../img/logo.png);
 	width: 31px;
 	height: 25px;
 	left: 0;
@@ -137,7 +137,7 @@ i {
 
 
 .himg1, .himg2, .himg3, .himg4, .himg5, .himg6, .himg7, .himg8, .himg9, .himg10, .himg11, .himg12{
-	background: url(./img/photo_1.jpg) center/cover;
+	background: url(../img/photo_1.jpg) center/cover;
 	height: 300px; width: 342px;
 	
 }
