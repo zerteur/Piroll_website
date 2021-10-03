@@ -20,70 +20,69 @@ html, body {
 	font-family: Nunito Sans, sans-serif;
 	height: 0;
 	position: relative;
+
 }
 
-/*********************************************************************************************************************************************************************************/
-                                                                          /*header*/
-/*********************************************************************************************************************************************************************************/
-
+/*-------------------------------------------- HEADER------------------------------------------*/
 
 header {
 	height: 70px;
-	margin: 35px 75px 0px 75px ;
+	margin: 35px 100px 0px 100px ;
 	position: relative;
 	width: auto;
-
-
 }
 
-header img {
+
+.header {
 	display: flex;
-	justify-content: center;
 	align-items: center;
-	left: 0;
-	position: absolute;
+	position: relative;
+	height: 35px;
+
 }
 
+.logo {
+	background: url(./img/logo.png);
+	width: 31px;
+	height: 25px;
+	left: 0;
+}
 
-.menu ul {
+header ul {
 	font-family: Montserrat, sans-serif;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
 	position: absolute;
 	width: 200px;
 	right: 0;
 }
 
-.menu li {
-	color: #191919FF;
-	transition: 0.4s;
+header li {
 	cursor: pointer;
 	font-weight: bold;
+	transition: 0.3s;
+}
 
+header li:hover {
+	color: skyblue;
+	
 
 }
 
-.menu li:hover {
-	color: #11C8C3FF;
 
-}
+/*--------------------------------------------MAIN-----------------------------------------------*/
 
-/*********************************************************************************************************************************************************************************/
-                                                                          /*SECTION 1*/
-/*********************************************************************************************************************************************************************************/
-
-.section-1 {
+main {
 	height: 300px;
-	width: auto;
+	width: 100%;
 	position: relative;
 	background: #F6F6F6FF;
 
 }
 
 .container {
-	height: 100px;
 	margin: 65px 400px 70px 400px;
+	width: 50%;
 	position: absolute;
 	text-align: center;
 	
@@ -93,74 +92,87 @@ header img {
 	color: #838383FF;
 }
 
-/*********************************************************************************************************************************************************************************/
-                                                                          /*SECTION 2*/
-/*********************************************************************************************************************************************************************************/
 
-.section-2 {
-	min-height: 100vh;
+
+/*--------------------------------------------NAV-----------------------------------------------*/
+
+nav {
 	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(4, 335px);
+	grid-template-rows: repeat(3, 300px);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px; 
+}
+
+.hmenu {
 	position: relative;
+	width: 342px; height: 300px;
+	transition: 0.7s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	
 }
 
 
-
-.viewer {
-	 display: grid;
-     grid-template-columns: repeat(4, 1fr);
-     grid-template-rows: repeat(3, 1fr);
-     grid-row-gap: 0px;
-     grid-column-gap: 0px;
-     width: 100%;
-     position: absolute;
-     
+i {
+	margin: 0;
+	color: white;
+	font-size: 50px;
+    right: 40%;
+    bottom: 45%;
+    position: absolute;
+    visibility: hidden;
+    
 }
-.viewer img {
 
-	width: 100%;
-	height: 300px;
-	transition: 0.45s;
-	cursor: pointer;
+.himghover {
+	background: rgba(49, 205, 201, 0.3);
+	height: 300px; width: 342px;
+	position: absolute;
+	visibility: hidden;
 	
 }
 
-.viewer img:hover {
-	border-radius: 1px 250px / 250px;
+
+.himg1, .himg2, .himg3, .himg4, .himg5, .himg6, .himg7, .himg8, .himg9, .himg10, .himg11, .himg12{
+	background: url(./img/photo_1.jpg) center/cover;
+	height: 300px; width: 342px;
+	
+}
+
+/*Parti qui permet lanimation de limage par dessus*/
+.hmenu:hover .himghover, .hmenu:hover i, .hmenu:hover .himg {
+visibility: visible;
+
 
 }
 
 
-/*********************************************************************************************************************************************************************************/
-                                                                          /*FOOTER*/
-/*********************************************************************************************************************************************************************************/
-
+/*--------------------------------------------FOOTER-----------------------------------------------*/
 
 footer {
+	padding-top: 35px;
+	margin: 55px, 100px, 95px, 100px;
 	height: 280px;
 	width: 100%;
-	background: black;
+	background: #141414FF;
 	position: relative;
 	color: white;
 
 }    
 
-h2, p {
-	visibility: hidden;
+.grid {
+	margin: 90px 110px 0px 110px;
+	display: grid;
+	grid-template-columns: 7fr 5fr repeat(3, 2fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px; 
+	
 }
 
-ul{
-	display: flex;
-	justify-content: space-around;
-	width: 470px;
-	letter-spacing: 1px;
-	margin: 100px, 125px, 40px, 850px;
-    
-
-}
-
-.footermenu, footer p, footer h2 {
-
-	margin: 55px, 100px, 95px, 100px;
-	position: absolute;
+footer li {
+	cursor: pointer;
 }
